@@ -1,12 +1,15 @@
 import React from 'react'
 import { Row, Col, Image, Badge } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const SingleDish = ({ dish }) => (
     <Row>
         <Col md={8} className="ml-auto mr-auto">
             <Row>
                 <Col md={4}>
-                    <Image src={dish.image} className="my-2 w-100 h-auto" />
+                    <Link to={'/details/' + dish.id}>
+                        <Image src={dish.image} className="my-2 w-100 h-auto" />
+                    </Link>
                 </Col>
                 <Col md={8} className="mt-auto mb-auto">
                     <h4>

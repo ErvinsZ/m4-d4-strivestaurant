@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Alert, ListGroup, Badge } from "react-bootstrap";
 
-class DishComments extends Component {
-  render() {
+class DishComment = (props) => {
     return (
       <>
         {this.props.selectedDish && (
@@ -44,6 +43,6 @@ class DishComments extends Component {
       </>
     );
   }
-}
+
 
 export default DishComments;
