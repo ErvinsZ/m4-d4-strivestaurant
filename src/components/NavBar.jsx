@@ -2,8 +2,8 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link, withRouter } from 'react-router-dom'
 
-const NavBar = (props) => {
-  return (
+class NavBar extends React.Component {
+  render() {
     <div>
       {console.log('NAVBAR PROPS --> ', props)}
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
@@ -36,7 +36,7 @@ const NavBar = (props) => {
         </Navbar.Collapse>
       </Navbar>
     </div>
-  );
+  }
 }
 
 export default withRouter(NavBar);
