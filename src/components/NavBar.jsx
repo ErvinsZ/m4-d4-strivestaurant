@@ -3,7 +3,12 @@ import { Navbar, Nav } from "react-bootstrap";
 import { Link, withRouter } from 'react-router-dom'
 
 class NavBar extends React.Component {
-  render() {
+  constuctor (props) {
+    super(props)
+  }
+  render(){
+
+  return (
     <div>
       {console.log('NAVBAR PROPS --> ', props)}
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
@@ -36,7 +41,8 @@ class NavBar extends React.Component {
         </Navbar.Collapse>
       </Navbar>
     </div>
-  }
+  );
+}
 }
 
 export default withRouter(NavBar);
